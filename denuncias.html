@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <title>Denuncias/reclamos - Patitas Felices</title>
+    <link rel="stylesheet" href="css/formularios.css">
+    <link rel="stylesheet" href="css/estiloGeneral.css">
+    <link rel="stylesheet" href="css/denuncias.css">
+</head>
+
+<body>
+    <div class="fondo">
+        <header class="header">
+            <div class="menu-opciones">
+                <img src="imagenes/logo.png">
+                <a href="index.html">Inicio</a>
+                <a href="quienesSomos.html">¿Quiénes somos?</a>
+                <a href="donacion.html">Apoya nuestro refugio</a>
+                <a href="#">Denuncias/reclamos</a>
+                <a href="mascotas.html">Nuestras Mascotas</a>
+            </div>
+        </header>
+
+        <div class="denuncias_reclamos">
+
+            <div class="denuncias_contenido">
+                <div class="contenedor_introduccion">
+
+                    <div class="introduccion_maltrato">
+                        <h2>Maltrato animal</h2>
+                        <h3>¿Qué es? ¿Cómo evitarlo? ¿Cómo actuar frente a esto?</h3>
+                        <p>En Patitas Felices, estamos totalmente en contra de la violencia y repudiamos cualquier<br>
+                            forma de maltrato hacia
+                            alguna vida.
+                        </p>
+                    </div>
+                    <div class="video_prevencion">
+                        <video width="560" height="315" src="imagenes/videomaltrato.mp4" frameborder="0" controls
+                            poster="imagenes/prevencion.jpg"></video>
+                    </div>
+                </div>
+
+                <div class="contenedor_formulario">
+                    <div class="formulario_denuncias">
+                        <div class="mensaje_formulario">
+                            <h2>Entendemos que a veces, ponerle un freno a estas cosas resulta complicado, y muchas
+                                veces
+                                no queremos involucrarnos para evitar problemas. Si sos espectador de alguna
+                                situación de
+                                violencia pero no querés revelar tu identidad, podés
+                                hacerlo de forma anónima.</h2>
+                            <p>Es tan importante para vos como para nosotros evitar que estas cosas sucedan, no seas
+                                parte,
+                                sé
+                                la diferencia. Ellos te necesitan.</p>
+                        </div>
+
+                        <div class="formulario_anonimo">
+                            <form id="formulario_denuncias">
+
+                                <!--Grupo de ubicación-->
+                                <div class="denuncias_grupo" id="grupo_ubicacion">
+                                    <label for="ubicacion" class="denuncias_label">Ubicación</label>
+                                    <div class="denuncias_grupo_input">
+                                        <textarea class="denuncias_input" name="ubicacion" id="ubicacion"
+                                            style="height: 70px"></textarea>
+                                        <i class="denuncia_estado fa-solid fa-xmark"></i>
+                                    </div>
+                                    <p class="denuncias_input_error">Campo obligatorio</p>
+                                </div>
+
+                                <!--Grupo de personas involucradas-->
+                                <div class="denuncias_grupo" id="grupo_involucrados">
+                                    <label for="involucrados" class="denuncias_label">Involucrados</label>
+                                    <div class="denuncias_grupo_input">
+                                        <textarea class="denuncias_input" name="involucrados" id="involucrados"
+                                            style="height: 70px"></textarea>
+                                        <i class="denuncia_estado fa-solid fa-xmark"></i>
+                                    </div>
+                                    <p class="denuncias_input_error">Campo obligatorio</p>
+                                </div>
+
+                                <!--Grupo de descripción-->
+                                <div class="denuncias_grupo" id="grupo_descHechos">
+                                    <label for="nombre" class="denuncias_label">Descripción de los hechos</label>
+                                    <div class="denuncias_grupo_input">
+                                        <textarea class="denuncias_input" name="descHechos" id="descHechos"
+                                            style="height: 100px"></textarea>
+                                        <i class="denuncia_estado fa-solid fa-xmark"></i>
+                                    </div>
+                                    <p class="denuncias_input_error">Mínimo 50 caracteres</p>
+                                </div>
+
+                                <!--Mensaje error-->
+                                <div class="denuncias_mensaje" id="denuncias_mensaje">
+                                    <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b> rellene todos los
+                                        campos
+                                        correctamente.</p>
+                                </div>
+
+                                <!--Grupo enviar-->
+                                <div class="denuncias_grupo denuncias_grupo_btn_enviar">
+                                    <button type="button" class="denuncias_btn"
+                                        onclick="return validacionDenuncias()">Enviar</button>
+                                    <p class="denuncias_mensaje_exito" id="denuncias_mensaje_exito">Denuncia enviada.
+                                    </p>
+                                </div>
+
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <h4>Contáctanos</h4>
+            <p>patitasfelices@gmail.com | Tel. 2445-4324-88</p>
+            <i class="fa-solid fa-phone"></i>
+        </footer>
+</body>
+<script type="text/javascript" src="js/denuncias.js"></script>
+<script src="https://kit.fontawesome.com/2c4c507484.js" crossorigin="anonymous"></script>
+
+</html>

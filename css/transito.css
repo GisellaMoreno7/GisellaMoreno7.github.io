@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+
+.transito {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s;
+}
+
+.transito .imagenes {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    width: 90%;
+    height: 400px;
+}
+
+.transito .imagenes .imagen {
+    position: relative;
+    overflow: hidden;
+    min-width: 60px;
+    margin: 10px;
+    background-size: auto 100%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.5, 0.5, 0.5, 0.5);
+    transition-duration: 1s;
+}
+
+.transito .imagenes .imagen.activa {
+    flex-grow: 10000;
+    transform: scale(1);
+    max-width: 700px;
+    margin: 0;
+    border-radius: 25px;
+    background-size: auto 100%;
+}
+
+.transito .imagenes .imagen.activa .label {
+    background: black;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 50px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    transition-duration: 1s;
+}
+
+.transito .imagenes .imagen:not(.activa) {
+    flex-grow: 1;
+    border-radius: 25px;
+    transition: 0.5s cubic-bezier(0.5, 0.5, 0.5, 0.5);
+    transition-duration: 1s;
+}
+
+.transito .imagenes .imagen:not(.activa) .label {
+    bottom: 10px;
+    left: 10px;
+}
+
+.transito .imagenes .imagen:not(.activa) .label .info {
+    display: none;
+}
+
+.transito .imagenes .imagen .label {
+    display: flex;
+    position: absolute;
+}
+
+.transito .imagenes .imagen .label .icono {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E4E4E3;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--dark);
+}
+
+.transito .imagenes .imagen .label .info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    color: #E4E4E3;
+}
+
+.transito .imagenes .imagen .label .info .nombre {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 718px) {
+    .transito .imagenes {
+        min-width: 520px;
+    }
+
+    .transito .imagenes .imagen:nth-child(5) {
+        display: none;
+
+    }
+}

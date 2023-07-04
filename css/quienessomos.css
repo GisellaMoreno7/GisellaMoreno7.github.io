@@ -1,0 +1,31 @@
+.quienes-somos h2 {
+    margin-bottom: 30px;
+    text-align: left;
+    color: #E4E4E3;
+    font-weight: 20px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.quienes-somos p {
+    font-weight: 300;
+    color: #E4E4E3;
+    padding: 10px;
+    line-height: 50px;
+}
+
+.mensaje_presentacion {
+    display: flex;
+    justify-content: end;
+}
+
+.quienes-somos {
+    width: 80%;
+    margin: 0 10px 0 10px;
+}
+
+.quienes-somos img {
+    position: relative;
+    left: 150px;
+    bottom: 130px;
+}

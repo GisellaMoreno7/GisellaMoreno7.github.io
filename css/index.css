@@ -1,0 +1,16 @@
+.transito {
+    display: flex;
+    flex-direction: column;
+}
+
+.transito-mensaje {
+    position: relative;
+    bottom: 110px;
+    color: #E4E4E3;
+    border-bottom: 1px solid #E4E4E3;
+    text-align: center;
+}
+
+.transito-mensaje p {
+    font-weight: 300;
+}

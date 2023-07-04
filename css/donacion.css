@@ -1,0 +1,38 @@
+.apoyanos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #E4E4E3;
+}
+
+.apoyanos p {
+    font-weight: 300;
+}
+
+#imagen_donacion {
+    display: block;
+    margin: 0 auto;
+}
+
+.mensaje_donacion,
+.apoyanos_contenido {
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+.formulario_donar {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.formulario_donar .mensaje_donacion {
+    text-align: center;
+    border-top: 1px solid #E4E4E3;
+}
